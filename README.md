@@ -1,7 +1,7 @@
 ### If you arent keyrolled, use regular [daub](https://github.com/Moonsploit/daub-shim) instead.
 # baddaub - keyrolled update blocking
 ### What is this?
-baddaub is daub injected into badrecovery unverified, allowing for update blocking on keyrolled kernver 6 ChromeOS devices. baddaub is a fork of [badbr0ker](https://github.com/crosbreaker/badbr0ker)
+baddaub is daub injected into badrecovery unverified, allowing for update blocking on keyrolled ChromeOS devices. baddaub is a fork of [badbr0ker](https://github.com/crosbreaker/badbr0ker)
 ### If you would like the script to do everything for you:
 ```bash
 git clone https://github.com/Moonsploit/baddaub
