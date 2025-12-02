@@ -11,7 +11,7 @@ sudo bash buildfull_baddaub.sh <board>
 ### If you would like to use a local recovery image:
 ```bash
 git clone https://github.com/Moonsploit/baddaub
-cd badsh1mmer
+cd baddaub
 sudo ./build_badrecovery.sh -i image.bin -t unverified
 ```
 ### How do I flash it to a usb drive or sd card?
