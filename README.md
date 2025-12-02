@@ -1,37 +1,27 @@
-### badsh1mmer
-
-# Support
-If you need any kind of support, please join our [discord server](https://discord.gg/nrMVY29MUb) for help
+### If you arent keyrolled, use regular [daub](https://github.com/Moonsploit/daub-shim) instead.
+# baddaub - keyrolled update blocking
+### What is this?
+baddaub is daub injected into badrecovery unverified, allowing for update blocking on keyrolled kernver 6 ChromeOS devices. baddaub is a fork of [badbr0ker](https://github.com/crosbreaker/badbr0ker)
 ### If you would like the script to do everything for you:
 ```bash
-git clone https://github.com/crosbreaker/badsh1mmer
-cd badsh1mmer
-bash buildfull_badsh1mmer.sh <board>
+git clone https://github.com/Moonsploit/baddaub
+cd baddaub
+sudo bash buildfull_baddaub.sh <board>
 ```
 ### If you would like to use a local recovery image:
 ```bash
-git clone https://github.com/crosbreaker/badsh1mmer
+git clone https://github.com/Moonsploit/baddaub
 cd badsh1mmer
-bash update_downloader.sh <board>
 sudo ./build_badrecovery.sh -i image.bin -t unverified
 ```
-### What is this?
-badsh1mmer is a sh1mmer payloads menu injected into badrecovery unverified, allowing for unenrollment on keyrolled kv5 ChromeOS devices.
-
-### How do I make a usb?
-Download an prebuilt from the [prebuilts section](#prebuilts), or build an image your self with the above commands.  Flash it using the [Chromebook Recovery Utility](https://chromewebstore.google.com/detail/chromebook-recovery-utili/pocpnlppkickgojjlmhdmidojbmbodfm), or anything else that etches
-### I have a usb, what now?
-Complete [sh1ttyOOBE](https://github.com/crosbreaker/sh1ttyOOBE), then enter developer mode and recover to your usb
-### Prebuilts
-
-[GitHub actions](https://nightly.link/crosbreaker/badsh1mmer/actions/runs/17752578576)
+### How do I flash it to a usb drive or sd card?
+Download a prebuilt from [dl.snerill.org/baddaub](https://dl.snerill.org/BadDaub), or build an image yourself with the above commands.  Flash it using the [Chromebook Recovery Utility](https://chromewebstore.google.com/detail/chromebook-recovery-utili/pocpnlppkickgojjlmhdmidojbmbodfm), or anything else that flashes images to USB drives and sd cards, such as [BalenaEtcher](https://etcher.balena.io/), [dd](https://en.wikipedia.org/wiki/Dd_(Unix)) or [rufus](https://rufus.ie/en/)
+### I have flashed a usb drive or sd card, what now?
+Complete sh1ttyoobe, sh1ttyexec, or any oher method for booting unverified recovery images then enter developer mode and recover to your usb, choose to unenroll or reenroll, then reboot and disable developer mode. When you setup it will be unenrolled.
 ### Credits:
-[HarryJarry1](https://github.com/HarryJarry1) - Badbr0ker, finding the VPD vulnerability
 
-[BinBashBanana](https://github.com/binbashbanana) - original br0ker, badrecovery
+[BinBashBanana](https://github.com/binbashbanana) - badrecovery
 
-[Crossjbly](https://github.com/crossjbly) - Creating menu, anything new that was added ontop of the original badbr0ker source code
+[crosbreaker](https://github.com/crosbreaker) - badsh1mmer
 
-[Lxrd](https://github.com/SPIRAME) - Sh1ttyOOBE
-
-[codenerd87](https://github.com/codenerd87) - more board support on badbr0ker
+[Zeglol](https://github.com/ZeglolTheThirtySixth) - daub
