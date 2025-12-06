@@ -68,6 +68,6 @@ else
 fi
 
 echo "Cleaning up directory"
-rm -rf badsilver/16295
-echo "No errors detected while building the badsilver image"
+rm -rf baddaub/16295
+echo "No errors detected while building the baddaub image"
 echo "File saved to $OUTPUT_FILE"
